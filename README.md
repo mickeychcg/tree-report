@@ -10,7 +10,7 @@ An octree is a tree data structure in which each internal node has exactly eight
 
 Well I'm glad you asked...
 
-The octree color quantization algorithm, invented by Gervautz and Purgathofer in 1988. The use of octrees for 3D computer graphics was pioneered by Donald Meagher at Rensselaer Polytechnic Institute, described in a 1980 report "Octree Encoding: A New Technique for the Representation, Manipulation and Display of Arbitrary 3-D Objects by Computer"
+The octree color quantization algorithm, invented by Gerwitz and Purgathofer in 1988. The use of octrees for 3D computer graphics was pioneered by Donald Meagher at Rensselaer Polytechnic Institute, described in a 1980 report "Octree Encoding: A New Technique for the Representation, Manipulation and Display of Arbitrary 3-D Objects by Computer"
 
 Octrees are often used in game and animation engines, in particular for ***quantizing*** color values.
 
