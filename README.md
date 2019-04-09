@@ -4,7 +4,7 @@
 # The Octree - Oct (8) - tree
 An octree is a tree data structure in which each internal node has exactly eight children. Octrees are most often used to partition a three-dimensional space by recursively subdividing it into eight octants. Octrees are often used in 3D graphics and 3D game engines.
 
-![Octree](/img/Octree2.svg "Octree")
+![Octree](/img/640px-Octree2.svg.png "Octree")
 Left: Recursive subdivision of a cube into octants. Right: The corresponding octree.
 ## So what do you use an Octree for, Mickey?
 
