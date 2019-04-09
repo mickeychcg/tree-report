@@ -36,3 +36,4 @@ Octrees encode image color data up to nine levels deep. Octrees are used because
 
 The algorithm is highly memory efficient because the tree's size can be limited. The bottom level of the octree consists of leaf nodes that accrue color data not represented in the tree; these nodes initially contain single bits. If much more than the desired number of palette colors are entered into the octree, its size can be continually reduced by seeking out a bottom-level node and averaging its bit data up into a leaf node, pruning part of the tree. Once sampling is complete, exploring all routes in the tree down to the leaf nodes, taking note of the bits along the way, will yield approximately the required number of colors.
 
+[octree color quantization](https://observablehq.com/@tmcw/octree-color-quantization#uniqueColors)
