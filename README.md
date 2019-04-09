@@ -32,7 +32,7 @@ Octrees are essential to optimizing performance for rendering engines like Pixar
 
 ## How does it work?
 
-Octrees encode image color data up to nine levels deep. Octrees are used because 2<sup>3</sup> = 8 and there are three color components in the RGB system~. The node index to branch out from at the top level is determined by a formula that uses the most significant bits of the red, green, and blue color components, e.g. 4r + 2g + b. The next lower level uses the next bit significance, and so on. Less significant bits are sometimes ignored to reduce the tree size.
+Octrees encode image color data up to nine levels deep. Octrees are used because rgb data is stored in bytes:  2<sup>3</sup> = 8, and there are three color components in the RGB system~. The node index to branch out from at the top level is determined by a formula that uses the most significant bits of the red, green, and blue color components, e.g. 4r + 2g + b. The next lower level uses the next bit significance, and so on. Less significant bits are sometimes ignored to reduce the tree size.
 
 The algorithm is highly memory efficient because the tree's size can be limited. The bottom level of the octree consists of leaf nodes that accrue color data not represented in the tree; these nodes initially contain single bits. If much more than the desired number of palette colors are entered into the octree, its size can be continually reduced by seeking out a bottom-level node and averaging its bit data up into a leaf node, pruning part of the tree. Once sampling is complete, exploring all routes in the tree down to the leaf nodes, taking note of the bits along the way, will yield approximately the required number of colors.
 
